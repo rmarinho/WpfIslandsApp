@@ -17,11 +17,14 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<!--<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.82" />
-	</ItemGroup>-->
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="CommunityToolkit.Maui" Version="9.1.1" />
+  </ItemGroup>
 
-	<ItemGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\Libs\src\Controls\src\Core\Controls.Core.csproj" />
 	  <ProjectReference Include="..\Libs\src\Controls\src\Xaml\Controls.Xaml.csproj" />
 	</ItemGroup>
 
