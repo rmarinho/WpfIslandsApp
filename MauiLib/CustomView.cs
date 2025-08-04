@@ -19,7 +19,8 @@
             var collectionView = new CollectionView
             {
                 ItemsSource = new List<string> { "Item 1", "Item 2", "Item 3" },
-                //ItemTemplate = new DataTemplate(() => {
+                //ItemTemplate = new DataTemplate(() =>
+                //{
                 //    var label = new Label();
                 //    label.SetBinding(Label.TextProperty, ".");
                 //    return label;
