@@ -14,7 +14,8 @@
         <Button Content="WPF button" 
                 Margin="10" 
                 HorizontalAlignment="Left" 
-                VerticalAlignment="Top"/>
+                VerticalAlignment="Top"
+                Click="Button_Click"/>
         <Border Name="ControlHostElement"
    Grid.Row="1"
     HorizontalAlignment="Stretch"

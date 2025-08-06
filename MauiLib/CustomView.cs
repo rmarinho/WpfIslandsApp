@@ -19,12 +19,12 @@
             var collectionView = new CollectionView
             {
                 ItemsSource = new List<string> { "Item 1", "Item 2", "Item 3" },
-                //ItemTemplate = new DataTemplate(() =>
-                //{
-                //    var label = new Label();
-                //    label.SetBinding(Label.TextProperty, ".");
-                //    return label;
-                //})
+                ItemTemplate = new DataTemplate(() =>
+                {
+                    var label = new Label();
+                    label.SetBinding(Label.TextProperty, ".");
+                    return label;
+                })
             };
             grid.Add(mauiButton, 0, 0);
             grid.Add(mauiButton2, 0, 1);

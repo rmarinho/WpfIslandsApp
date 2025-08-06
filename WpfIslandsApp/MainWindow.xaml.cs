@@ -14,15 +14,13 @@ namespace WpfIslandsApp
     public partial class MainWindow : System.Windows.Window
     {
         DispatcherQueueController _controller;
-
-        private WinUIControlHost _winUIControl;
-        private System.Windows.Window _myWindow;
-    
+        WinUIControlHost _winUIControl;
+      
         public MainWindow()
         {
             _controller = Microsoft.UI.Dispatching.DispatcherQueueController.CreateOnCurrentThread();
 
-            var xamlApp = new XamlApp();
+            var aoo = new MauiLib.XamlApp(new MauiLib.MauiLib_XamlTypeInfo.XamlMetaDataProvider());
 
             InitializeComponent();
             Loaded += MainWindow_Loaded;
@@ -32,6 +30,11 @@ namespace WpfIslandsApp
         {
             _winUIControl = new WinUIControlHost(ControlHostElement.ActualHeight, ControlHostElement.ActualWidth);
             ControlHostElement.Child = _winUIControl;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
