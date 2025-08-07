@@ -41,7 +41,7 @@ namespace WpfIslandsApp
             return new HandleRef(null, (nint)_xamlSource.SiteBridge.WindowId.Value);
         }
 
-        private void InitMauiSampleCode()
+        public void InitMauiSampleCode()
         {
             MauiAppBuilder builder = MauiApp.CreateBuilder();
             builder.UseMauiEmbeddedApp<MauiLib.App>();
