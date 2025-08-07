@@ -22,7 +22,7 @@
                 ItemTemplate = new DataTemplate(() =>
                 {
                     var label = new Label();
-                    label.SetBinding(Label.TextProperty, ".");
+                    label.SetBinding(Label.TextProperty, ".", stringFormat: "MAUILABEL: {0}");
                     return label;
                 })
             };

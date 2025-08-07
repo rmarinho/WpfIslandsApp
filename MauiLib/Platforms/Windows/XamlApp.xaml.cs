@@ -43,7 +43,7 @@ namespace MauiLib
 
         private void App_ResourceManagerRequested(object sender, ResourceManagerRequestedEventArgs args)
         {
-            args.CustomResourceManager = new Microsoft.Windows.ApplicationModel.Resources.ResourceManager("MauiLib.pri");
+            args.CustomResourceManager = new Microsoft.Windows.ApplicationModel.Resources.ResourceManager("Microsoft.Maui.Controls.pri");
         }
 
         /// <summary>
@@ -52,11 +52,11 @@ namespace MauiLib
         /// <param name="args">Details about the launch request and process.</param>
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
-            this.Resources.MergedDictionaries.Add(new Microsoft.UI.Xaml.Controls.XamlControlsResources());
-            this.Resources.MergedDictionaries.Add(new Microsoft.UI.Xaml.ResourceDictionary
-            {
-                Source = new Uri("ms-appx:///Microsoft.Maui/Platform/Windows/Styles/Resources.xbf")
-            });
+          //  this.Resources.MergedDictionaries.Add(new Microsoft.UI.Xaml.Controls.XamlControlsResources());
+            //this.Resources.MergedDictionaries.Add(new Microsoft.UI.Xaml.ResourceDictionary
+            //{
+            //    Source = new Uri("ms-appx:///Microsoft.Maui/Platform/Windows/Styles/Resources.xbf")
+            //});
 
         }
 
